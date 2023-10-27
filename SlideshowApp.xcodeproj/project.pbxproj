@@ -13,6 +13,7 @@
 		C0B2F5742AE9505F0025E0F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B2F5722AE9505F0025E0F0 /* Main.storyboard */; };
 		C0B2F5762AE950640025E0F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0B2F5752AE950640025E0F0 /* Assets.xcassets */; };
 		C0B2F5792AE950640025E0F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B2F5772AE950640025E0F0 /* LaunchScreen.storyboard */; };
+		C0B2F5812AEB8B2B0025E0F0 /* ExpansionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B2F5802AEB8B2B0025E0F0 /* ExpansionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C0B2F5752AE950640025E0F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0B2F5782AE950640025E0F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0B2F57A2AE950640025E0F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0B2F5802AEB8B2B0025E0F0 /* ExpansionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C0B2F56C2AE9505F0025E0F0 /* AppDelegate.swift */,
 				C0B2F56E2AE9505F0025E0F0 /* SceneDelegate.swift */,
 				C0B2F5702AE9505F0025E0F0 /* ViewController.swift */,
+				C0B2F5802AEB8B2B0025E0F0 /* ExpansionViewController.swift */,
 				C0B2F5722AE9505F0025E0F0 /* Main.storyboard */,
 				C0B2F5752AE950640025E0F0 /* Assets.xcassets */,
 				C0B2F5772AE950640025E0F0 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B2F5812AEB8B2B0025E0F0 /* ExpansionViewController.swift in Sources */,
 				C0B2F5712AE9505F0025E0F0 /* ViewController.swift in Sources */,
 				C0B2F56D2AE9505F0025E0F0 /* AppDelegate.swift in Sources */,
 				C0B2F56F2AE9505F0025E0F0 /* SceneDelegate.swift in Sources */,
