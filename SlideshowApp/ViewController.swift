@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var returnbutton: UIButton!
     @IBOutlet weak var turnbutton: UIButton!
     @IBOutlet weak var slide_image: UIImageView!
+    @IBOutlet weak var return_image: UIImageView!
+    @IBOutlet weak var turn_image: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,12 +35,16 @@ class ViewController: UIViewController {
             //play_countが奇数の間はスライドショーが再生されている状態
             turnbutton.isEnabled = false
             returnbutton.isEnabled = false
+            turn_image.isHidden = true
+            return_image.isHidden = true
         }else{
             playandstopbutton.setTitle("再生", for: .normal)
             play_count += 1
             //play_countが0を含む偶数の間はスライドショーが停止している状態
             turnbutton.isEnabled = true
             returnbutton.isEnabled = true
+            turn_image.isHidden = false
+            return_image.isHidden = false
         }
     }
     

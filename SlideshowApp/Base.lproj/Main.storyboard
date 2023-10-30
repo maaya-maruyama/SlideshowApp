@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdf-73-cs6">
-                                <rect key="frame" x="88" y="559" width="59" height="35"/>
+                                <rect key="frame" x="88" y="609" width="59" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Dxb-0U-2oK"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uym-e3-mHR">
-                                <rect key="frame" x="167" y="559" width="59" height="35"/>
+                                <rect key="frame" x="167" y="609" width="59" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="HaI-NM-PGC"/>
                                 </constraints>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5c-pp-ZfC">
-                                <rect key="frame" x="246" y="559" width="59" height="35"/>
+                                <rect key="frame" x="246" y="609" width="59" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="xpv-D6-3uo"/>
                                 </constraints>
@@ -60,28 +60,57 @@
                                     <outletCollection property="gestureRecognizers" destination="Lpb-Cp-dwt" appends="YES" id="RFg-tF-qc6"/>
                                 </connections>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="挿入画像-3" translatesAutoresizingMaskIntoConstraints="NO" id="PQD-Iy-fgh">
+                                <rect key="frame" x="59" y="555.66666666666663" width="116" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="ERm-i2-x6F"/>
+                                    <constraint firstAttribute="height" constant="58" id="ryf-5h-mXA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="挿入画像-4" translatesAutoresizingMaskIntoConstraints="NO" id="3xe-yW-39U">
+                                <rect key="frame" x="138" y="555.66666666666663" width="116" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="CEY-Ra-IKQ"/>
+                                    <constraint firstAttribute="width" constant="116" id="Yxa-sN-8MR"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="挿入画像-2" translatesAutoresizingMaskIntoConstraints="NO" id="FYq-Y0-xa3">
+                                <rect key="frame" x="217" y="555.66666666666663" width="116" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="lnP-1R-Ato"/>
+                                    <constraint firstAttribute="width" constant="116" id="nps-92-FDF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="P5c-pp-ZfC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="500" id="0Pa-F1-bx2"/>
+                            <constraint firstItem="P5c-pp-ZfC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="550" id="0Pa-F1-bx2"/>
                             <constraint firstItem="uym-e3-mHR" firstAttribute="centerY" secondItem="kdf-73-cs6" secondAttribute="centerY" id="3rS-ED-0VI"/>
+                            <constraint firstItem="PQD-Iy-fgh" firstAttribute="top" secondItem="a3C-8M-561" secondAttribute="bottom" constant="25.329999999999998" id="BZw-x5-89I"/>
+                            <constraint firstItem="FYq-Y0-xa3" firstAttribute="top" secondItem="a3C-8M-561" secondAttribute="bottom" constant="25.329999999999998" id="Efw-iz-SkR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FYq-Y0-xa3" secondAttribute="trailing" constant="60" id="F3D-UE-hO9"/>
                             <constraint firstItem="uym-e3-mHR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kdf-73-cs6" secondAttribute="trailing" constant="8" symbolic="YES" id="FAJ-4E-QaH"/>
-                            <constraint firstItem="kdf-73-cs6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="500" id="Kro-YT-Kvr"/>
+                            <constraint firstItem="3xe-yW-39U" firstAttribute="top" secondItem="a3C-8M-561" secondAttribute="bottom" constant="25.329999999999998" id="GGo-Sj-moG"/>
+                            <constraint firstItem="kdf-73-cs6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="550" id="Kro-YT-Kvr"/>
                             <constraint firstItem="P5c-pp-ZfC" firstAttribute="centerY" secondItem="kdf-73-cs6" secondAttribute="centerY" id="NiP-aS-lG8"/>
                             <constraint firstItem="a3C-8M-561" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Otb-CW-7dv"/>
-                            <constraint firstItem="uym-e3-mHR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="500" id="WLh-zc-XMi"/>
+                            <constraint firstItem="PQD-Iy-fgh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="Qhl-bO-896"/>
+                            <constraint firstItem="uym-e3-mHR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="550" id="WLh-zc-XMi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P5c-pp-ZfC" secondAttribute="trailing" constant="88" id="c93-gp-1m5"/>
                             <constraint firstItem="P5c-pp-ZfC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uym-e3-mHR" secondAttribute="trailing" constant="8" symbolic="YES" id="eQU-mf-ZFg"/>
                             <constraint firstItem="a3C-8M-561" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pwG-IY-U7u"/>
                             <constraint firstItem="uym-e3-mHR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q1L-jl-rWH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3xe-yW-39U" secondAttribute="trailing" constant="139" id="uPu-m9-l8v"/>
                             <constraint firstItem="kdf-73-cs6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="wOF-Jl-pYa"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="playandstopbutton" destination="uym-e3-mHR" id="3LE-UU-oRL"/>
+                        <outlet property="return_image" destination="PQD-Iy-fgh" id="pmv-co-Gjr"/>
                         <outlet property="returnbutton" destination="kdf-73-cs6" id="wM1-R2-yiO"/>
                         <outlet property="slide_image" destination="a3C-8M-561" id="gSa-fL-85Q"/>
+                        <outlet property="turn_image" destination="FYq-Y0-xa3" id="Jdf-q8-fR5"/>
                         <outlet property="turnbutton" destination="P5c-pp-ZfC" id="OJn-Al-a07"/>
                     </connections>
                 </viewController>
@@ -120,6 +149,12 @@
                                     <constraint firstAttribute="width" constant="393" id="jsN-z0-WNc"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="挿入画像" translatesAutoresizingMaskIntoConstraints="NO" id="Vq4-Aa-T4j">
+                                <rect key="frame" x="213" y="509" width="213" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="rKA-GO-n8v"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6vL-8v-dby"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -127,8 +162,11 @@
                             <constraint firstItem="FNy-Bt-8EO" firstAttribute="top" secondItem="6vL-8v-dby" secondAttribute="top" constant="500" id="0A7-pF-cWT"/>
                             <constraint firstItem="FNy-Bt-8EO" firstAttribute="top" secondItem="wnz-ke-Cco" secondAttribute="bottom" constant="90" id="1s6-EP-7XC"/>
                             <constraint firstItem="FNy-Bt-8EO" firstAttribute="centerX" secondItem="m1y-Qm-VHb" secondAttribute="centerX" id="9uW-kO-IXY"/>
+                            <constraint firstItem="Vq4-Aa-T4j" firstAttribute="top" secondItem="wnz-ke-Cco" secondAttribute="bottom" constant="40" id="ABf-ms-xdv"/>
+                            <constraint firstItem="6vL-8v-dby" firstAttribute="bottom" secondItem="Vq4-Aa-T4j" secondAttribute="bottom" constant="34" id="GTQ-yh-jbz"/>
                             <constraint firstItem="wnz-ke-Cco" firstAttribute="top" secondItem="6vL-8v-dby" secondAttribute="top" constant="137" id="Wf9-Pf-xxV"/>
                             <constraint firstItem="6vL-8v-dby" firstAttribute="trailing" secondItem="wnz-ke-Cco" secondAttribute="trailing" id="hDX-5x-JIg"/>
+                            <constraint firstItem="Vq4-Aa-T4j" firstAttribute="leading" secondItem="6vL-8v-dby" secondAttribute="leading" constant="213" id="hpV-s3-Smm"/>
                             <constraint firstItem="wnz-ke-Cco" firstAttribute="leading" secondItem="6vL-8v-dby" secondAttribute="leading" id="kl5-ed-6t2"/>
                         </constraints>
                     </view>
@@ -145,6 +183,10 @@
     </scenes>
     <resources>
         <image name="pic1" width="1536" height="1536"/>
+        <image name="挿入画像" width="1000" height="1001"/>
+        <image name="挿入画像-2" width="500" height="500"/>
+        <image name="挿入画像-3" width="500" height="500"/>
+        <image name="挿入画像-4" width="500" height="499"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
