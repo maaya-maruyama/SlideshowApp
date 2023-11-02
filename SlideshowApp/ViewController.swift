@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         if (play_count%2) == 0{
             playandstopbutton.setTitle("停止", for: .normal)
             play_count += 1
+            //停止状態の0から再生状態の1へ遷移
             //play_countが奇数の間はスライドショーが再生されている状態
             turnbutton.isEnabled = false
             returnbutton.isEnabled = false
@@ -40,6 +41,7 @@ class ViewController: UIViewController {
         }else{
             playandstopbutton.setTitle("再生", for: .normal)
             play_count += 1
+            //再生状態の1から停止状態の0へ遷移
             //play_countが0を含む偶数の間はスライドショーが停止している状態
             turnbutton.isEnabled = true
             returnbutton.isEnabled = true
@@ -102,6 +104,18 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let expansionViewController:ExpansionViewController = segue.destination as! ExpansionViewController
         expansionViewController.result_image = slide_image.image!
+        if ((play_count%2) == 1){
+            self.timer.invalidate()
+            self.timer = nil
+            playandstopbutton.setTitle("再生", for: .normal)
+            play_count += 1
+            //再生状態の1から停止状態の0へ遷移
+            //play_countが0を含む偶数の間はスライドショーが停止している状態
+            turnbutton.isEnabled = true
+            returnbutton.isEnabled = true
+            turn_image.isHidden = false
+            return_image.isHidden = false
+        }
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue){
